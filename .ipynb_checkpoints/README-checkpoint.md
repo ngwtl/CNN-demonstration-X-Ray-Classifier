@@ -4,7 +4,7 @@
 
 ### Introduction and problem statement
 
-<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="250" height="250"/>
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="500"/>
 
 Lung conditions such as pneumonia, growths and nodules that may lead to lung cancer and infiltrates in the lung are debilitating and potentially life-threatening conditions widespread in all societies. This is especially true against the backdrop of COVID-19 where [15%](https://www.webmd.com/lung/ards-acute-respiratory-distress-syndrome) of all COVID-19 patients develop severe, life-threatening pneumonia-related complications.
 
