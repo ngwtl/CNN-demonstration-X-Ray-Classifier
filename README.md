@@ -4,7 +4,7 @@
 
 ### Introduction and problem statement
 
-
+![Image classification webapp](https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif)
 
 Lung conditions such as pneumonia, growths and nodules that may lead to lung cancer and infiltrates in the lung are debilitating and potentially life-threatening conditions widespread in all societies. This is especially true against the backdrop of COVID-19 where [15%](https://www.webmd.com/lung/ards-acute-respiratory-distress-syndrome) of all COVID-19 patients develop severe, life-threatening pneumonia-related complications.
 
@@ -13,7 +13,7 @@ In Singapore, statistics are even more compelling where pneumonia accounted for 
 
 Although lung conditions are common, accurately diagnosing pneumonia is a tall order. It requires review of a chest radiograph (CXR) by highly trained specialists and confirmation through clinical history, vital signs and laboratory exams. Pneumonia usually manifests as an area or areas of increased opacity on CXR. However, the diagnosis of pneumonia on CXR is complicated because of a number of other conditions in the lungs such as fluid overload (pulmonary edema), bleeding, volume loss (atelectasis or collapse), lung cancer, or post-radiation or surgical changes. Outside of the lungs, fluid in the pleural space (pleural effusion) also appears as increased opacity on CXR. When available, comparison of CXRs of the patient taken at different time points and correlation with clinical symptoms and history are helpful in making the diagnosis. Though onerous, CXR analysis is still one of the quickest and most efficient methods of first level screening compared to other more time-consuming radiography methods such as CT scans and MRIs.
 
-![Image classification webapp](https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif)
+
 
 The COVID-19 pandemic has exacerbated the resource scarcity within hospitals and there is a strong need to develop a quicker and more efficient way of screening and diagnosing life-threatening pneumonia and lung conditions in order to prevent hospital resources from being overwhelmed. This project attempts to address the issue of speedy lung condition diagnosis by utilising transfer learning of pre-trained convolutional neural networks (CNNs) on CXRs to develop a classification model. This model can then be deployed as a web application in order to develop a diagnostic tool to assist in speedy lung condition diagnosis. 
 
