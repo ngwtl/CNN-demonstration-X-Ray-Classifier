@@ -27,7 +27,7 @@ Finally, we will train our model using GridSearch, of which, the best model will
 
 ### Modelling
 ---
-<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Model%20results/model_performance.png" width="500"/>
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Model%20results/model_performance.png" width="600"/>
 
 
 
