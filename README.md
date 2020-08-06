@@ -67,23 +67,25 @@ The deployed model (named Dr. Glava Tikvah) consists of a simple image uploader 
 The app returns a simple diagnosis (0: Pneumonia, 1: No Pneumonia but something else, 3: Normal) and their respective predicted probabilities. The webapp is currenly run locally is entitled `app.py` in the `code` folder of this repository. Streamlit is required to run the app.
 
 
-<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="600"/>
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="500"/>
 
 ### Summary of Findings & Recommendations
 
-Examination of the the total costs of spraying the whole of Chicago compared against the benefits show that the costs far outweigh the benefits in monetary terms. At best, accounting for inflation or even a pessimistic outcome of having 50% more WNV infections, the total monetary benefit to Chicago as a society may only be 16%-25% of the total cost of spraying.
+Using RSNA data, a model based on the InceptionNetV3 architecture was trained to an accuracy of 71% in the classifying of CXR images. This was done with minimal image pre-processing and with pre-trained weights from "ImageNet".
 
-However, our model does not take into account any non-monetary benefits to reducing the mosquito population. These include the emotional costs from loss of life, the reduction in the need for enhanced testing for suspected WNV cases and public confidence in the government.
+Deployment was successful using Streamlit as a wrapper as a demonstration for. webapp that can act as a helpful diagnosis tool for physicians, just in case of human error. 
 
-From previous geospatial analysis of spray data, there is a distinct lack of evidence to support the claim that mosquito spraying had any effect on the reduction of WNV-infected mosquitos. Furthermore, the spray data pointed towards highly fragmented and haphazardous spraying operations that did not seem to be driven by the evidence if the presence and severity of WNV mosquito infestations. Traps such as the T900 trap at O'Hare International airport which proved to capture the most WNV-infected mosquitos by far were not sprayed.
+There are certain limitations to the model. For instance, the current accuracy is not good enough for the deployment to act as an independent diagnostic tool. All predictions must still be clinically correlated. 
+Also, the quality of the prediction is vastly influenced by the quality of the X-ray image fed into the webapp. Skill of radiologist plays an important factor in the functioning of the webapp. 
 
-Given the high costs required to conduct spraying operations, we hence recommend the following action points:
+Given the current limitations of the model further work can be done to enhance the effectiveness of the webapp. These include:
 
-- Re-examine the effectiveness of spraying Zenivex™ E4 as a means to control the mosquito population. Evidence points towards the ineffectiveness of the chemical and it is likely that other kinds of non-toxic mosquito sprays should be explored.
+- Training th emodel on larger datasets with different kinds of pneumonia.
 
-- Re-direct mosquito spraying operations in a more organised and evidence-driven manner whereby severe hotspots such as O'Hare International Airport are sprayed first at the beginning of summer in order to prevent large populations of mosquitos forming. In addition, spraying operations should be accurately logged and routes planned to make sure mosquito breeding sites are properly covered.
+- Implementing a grad-cam or heatmap imaging system in order to allow the user to visualise areas of interest.
 
-- Examine new ways of controlling the mosquito population that may arguably cost less than spraying the whole of Chicago. Innovative ways of doing so may include 'anti-mosquito' campaigns done in places such as Singapore or encouraging citizens of Chicago to get rid of stagnant water sources.
+- Experiment further with alternaive methods of image processing, such as playing with the transparency or subtracting backgrounds in orer to isolate the lungs.
+
 
 
 ### Folder Organisation:
