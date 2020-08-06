@@ -32,12 +32,13 @@ Finally, we will train our model using GridSearch, of which, the best model will
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Images/dataset%20info.png" width="600"/>
 
 
-
 X-Ray data was obtained from multiple different sources including the [NIH's](https://nihcc.app.box.com/v/ChestXray-NIHCC) open source dataset, [JSRT](http://db.jsrt.or.jp/eng.php) lung nodule dataset, the [Guangzhou Women's and Children's hospital](https://www.qmenta.com/covid-19-kaggle-chest-x-ray-normal/) dataset, the [Covid-19 open-source dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and the [RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) Pneumonia Detection Challenge. 
 
 Due to the imbalanced nature of the data, only the RSNA data was used to train the model. Images of other different lung anomalies were chosen from the other different datasets in order to act as a holdout set for deployment training.
+Normalised counts of classes establised the baseline score of 39% for the three classes of `No Lung Opactity/ Not Normal`,`Normal` and `Lung Opacity`.
 
 If using the code for deployment, please download the [RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) Pneumonia Detection Challenge dataset for code application. 
+
 ### Modelling
 ---
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Model%20results/model_performance.png" width="600"/>
