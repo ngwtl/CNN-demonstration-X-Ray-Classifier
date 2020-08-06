@@ -66,7 +66,7 @@ Full models with weights and architectures can be downloded from [here](https://
 ---
 The fully-trained InceptionNetV3 model was deployed as a webapp using [streamlit](https://www.streamlit.io/). 
 The deployed model (named Dr. Glava Tikvah) consists of a simple image uploader that allows a diagnostician or physician to upload CXRs.
-The app returns a simple diagnosis (0: Pneumonia, 1: No Pneumonia but something else, 3: Normal) and their respective predicted probabilities. The webapp can be run locally and is entitled `app.py` in the `code` folder of this repository. Streamlit is required to run the app.
+The app returns a simple diagnosis (0: Pneumonia, 1: No Pneumonia but something else, 3: Normal) and their respective predicted probabilities. The webapp can be run locally and is entitled `app.py` in the `code` folder of this repository. Streamlit is required to run the app. Please download the necessary trained models before instantiating the webapp. 
 
 
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="500"/>
