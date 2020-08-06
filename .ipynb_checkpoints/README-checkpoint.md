@@ -88,25 +88,3 @@ Given the current limitations of the model further work can be done to enhance t
 
 - Experiment further with alternaive methods of image processing, such as playing with the transparency or subtracting backgrounds in orer to isolate the lungs.
 
-
-
-### Folder Organisation:
----
-    |__ code
-    |   |__ 01_eda.ipynb   
-    |   |__ 02_modeling.ipynb    
-    |__ assets
-    |   |__ train.csv
-    |   |__ test.csv
-    |   |__ processed.zip    
-    |   |__ weather.csv
-    |   |__ spray.csv
-    |   |__ mapdata_copyright_openstreetmap_contributors.txt
-    |__ chicago_geodata
-    |   |__ geo_export_55fcb48c-7621-4c8a-999c-9fb3c86e8950.dbf
-    |   |__ geo_export_55fcb48c-7621-4c8a-999c-9fb3c86e8950.prj
-    |   |__ geo_export_55fcb48c-7621-4c8a-999c-9fb3c86e8950.shp
-    |   |__ geo_export_55fcb48c-7621-4c8a-999c-9fb3c86e8950.shx
-    |__ planning_doc.xlsx
-    |__ group_presentation.pdf
-    |__ README.md
