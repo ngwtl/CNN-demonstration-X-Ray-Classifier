@@ -82,7 +82,7 @@ Also, the quality of the prediction is vastly influenced by the quality of the X
 
 Given the current limitations of the model further work can be done to enhance the effectiveness of the webapp. These include:
 
-- Training th emodel on larger datasets with different kinds of pneumonia.
+- Training the model on larger datasets with different kinds of pneumonia.
 
 - Implementing a grad-cam or heatmap imaging system in order to allow the user to visualise areas of interest.
 
