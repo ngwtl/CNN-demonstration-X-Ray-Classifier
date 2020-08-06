@@ -1,0 +1,7 @@
+﻿Model,Accuracy
+Densenet121,67.4
+Resnet50,65.2
+InceptionnetV3,72.08
+Xception,42.23
+VGG16,37.5
+InceptionResnetV2,46.875
