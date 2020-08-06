@@ -20,11 +20,12 @@ The COVID-19 pandemic has exacerbated the resource scarcity within hospitals and
 
 ### Executive Summary
 ---
-For this project, we will consider 4 datasets, namely, train, test, spray and weather.
+An image classifier based on the InceptionNetV3 architecture was trained using 30,000 images taken from the RSNA pneumonia lung challenge dataset. The images were classfied into 3 categories:
+1) Pneumonia
+2) Normal
+3) No pneumonia, but likely other complications.
 
-Once the datasets are imported, we will explore each feature. Feature engineering comes next as we transform the date and weather features. Categorical features are also transformed to dummy variables.
-
-Finally, we will train our model using GridSearch, of which, the best model will be used for our Kaggle submission.
+The model, which achieved an accuracy score of 72% was deployed using streamlit as a web app image classifier that can be used as a diagnostic tool for physicians. 
 
 ### Data
 ---
