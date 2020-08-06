@@ -3,7 +3,7 @@
 
 
 ### Introduction and problem statement
-
+---
 Lung conditions such as pneumonia, growths and nodules that may lead to lung cancer and infiltrates in the lung are debilitating and potentially life-threatening conditions widespread in all societies. This is especially true against the backdrop of COVID-19 where [15%](https://www.webmd.com/lung/ards-acute-respiratory-distress-syndrome) of all COVID-19 patients develop severe, life-threatening pneumonia-related complications.
 
 In the non-COVID-19 world, pneumonia accounts for over 15% of all deaths of children under 5 years old internationally. In 2015, 920,000 children under the age of 5 died from the disease. In the United States, pneumonia accounts for over 500,000 visits to emergency departments and over 50,000 deaths in 2015 , keeping the ailment on the list of top 10 causes of death in the country.
@@ -18,13 +18,20 @@ The COVID-19 pandemic has exacerbated the resource scarcity within hospitals and
 
 
 ### Executive Summary
+---
 For this project, we will consider 4 datasets, namely, train, test, spray and weather.
 
 Once the datasets are imported, we will explore each feature. Feature engineering comes next as we transform the date and weather features. Categorical features are also transformed to dummy variables.
 
 Finally, we will train our model using GridSearch, of which, the best model will be used for our Kaggle submission.
 
+### Data
+---
+X-Ray data was obtained from multiple different sources including the [NIH's](https://nihcc.app.box.com/v/ChestXray-NIHCC) open source dataset, [JSRT](http://db.jsrt.or.jp/eng.php) lung nodule dataset, the [Guangzhou Women's and Children's hospital](https://www.qmenta.com/covid-19-kaggle-chest-x-ray-normal/) dataset, the [Covid-19 open-source dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and the [RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) Pneumonia Detection Challenge. 
 
+Due to the imbalanced nature of the data, only the RSNA data was used to train the model. Images of other different lung anomalies were chosen from the other different datasets in order to act as a holdout set for deployment training.
+
+If using the code for deployment, please download the [RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) Pneumonia Detection Challenge dataset for code application. 
 ### Modelling
 ---
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Model%20results/model_performance.png" width="600"/>
@@ -45,7 +52,8 @@ Using Keras's in-built functions and weights, 6 different convolutional newtwrok
 | VGG16 	| 37.5 	|
 
 By comparing the above scores, the final convolutional network architecture chosen for deployment is InceptionNetV3 due to its performance.
-    
+
+Full models with weights and architectures can be downloded from [here](https://drive.google.com/drive/folders/1o4f_wEdg8dkKS_6vFnryg_pEMYzNrbv0?usp=sharing).
 ### Deployment
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="500"/>
 
