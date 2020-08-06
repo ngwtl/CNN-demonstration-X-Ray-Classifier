@@ -33,9 +33,18 @@ Finally, we will train our model using GridSearch, of which, the best model will
 
 Transfer learning takes what a model has learned while solving one problem and applies it towards a new application. For instance, the knowledge that a neural network that has already been pre-trained to recognise objects such as cats or dogs can be used to help do a better job in reading X-ray images. 
 
-Using XGBoost (our best performing model), we achieved an ROC_AUC of **0.8511**. GridSearchCV and cross_val_score were used to tune the respective classifier with the optimised hyperparameters and then check if the learning algorithm is capable of yielding high mean score and low variances as we would want the selected learning algorithm to be capable of producing similar performance on unseen data. In this case it will be the test set provided by kaggle.
+Using Keras's in-built functions and weights, 6 different convolutional newtwrok architectures (VGG16, Xception, InceptionResnetV2, ResNet50, Densenet121 and InceptionnetV3) were trained with preset "ImageNet" weights to determine which was the best candidate to take to production.
 
-By comparing the above scores, the final learning algorithm that is choosen is XGBoost. Using the best parameters selected are `colsample_bytree = 0.2`, `gamma = 0.03`, `learning_rate = 0.1`, `max_depth = 3`, `reg_alpha = 0`, `reg_lambda = 1`, `subsample = 0.5`.
+| Model 	| Accuracy (%) 	|
+|-	|-	|
+| InceptionnetV3 	| 72.08 	|
+| Densenet121 	| 67.4 	|
+| Resnet50 	| 65.2 	|
+| InceptionResnetV2 	| 46.875 	|
+| Xception 	| 42.23 	|
+| VGG16 	| 37.5 	|
+
+By comparing the above scores, the final convolutional network architecture chosen for deployment is InceptionNetV3 due to its performance.
     
 ### Deployment
 <img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/demo.gif" width="500"/>
