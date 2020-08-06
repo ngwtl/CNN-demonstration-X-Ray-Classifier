@@ -1,5 +1,4 @@
 ## Capstone - Transfer learning to assist in pneumonia diagnosis using chest X-ray images
----
 
 
 ### Introduction and problem statement
@@ -8,6 +7,8 @@ Lung conditions such as pneumonia, nodules that may lead to lung cancer and infi
 
 In the non-COVID-19 world, pneumonia accounts for over 15% of all deaths of children under 5 years old internationally. In 2015, 920,000 children under the age of 5 died from the disease. In the United States, pneumonia accounts for over 500,000 visits to emergency departments and over 50,000 deaths in 2015 , keeping the ailment on the list of top 10 causes of death in the country.
 In Singapore, statistics are even more compelling where pneumonia accounted for [20.6](https://www.healthxchange.sg/heart-lungs/lung-conditions/pneumonia-causes-symptoms#:~:text=Pneumonia%2C%20a%20serious%20inflammatory%20condition,Ministry%20of%20Health%20(MOH).) per cent of deaths in Singapore in 2018, just behind cancer, the top killer, which caused 28.8 per cent of deaths.
+
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Images/x-ray%20samples.png" width="600"/>
 
 Although lung conditions are common, accurately diagnosing pneumonia is a tall order. It requires review of a chest radiograph (CXR) by highly trained specialists and confirmation through clinical history, vital signs and laboratory exams. Pneumonia usually manifests as an area or areas of increased opacity on CXR. However, the diagnosis of pneumonia on CXR is complicated because of a number of other conditions in the lungs such as fluid overload (pulmonary edema), bleeding, volume loss (atelectasis or collapse), lung cancer, or post-radiation or surgical changes. Outside of the lungs, fluid in the pleural space (pleural effusion) also appears as increased opacity on CXR. When available, comparison of CXRs of the patient taken at different time points and correlation with clinical symptoms and history are helpful in making the diagnosis. Though onerous, CXR analysis is still one of the quickest and most efficient methods of first level screening compared to other more time-consuming radiography methods such as CT scans and MRIs.
 
@@ -27,6 +28,11 @@ Finally, we will train our model using GridSearch, of which, the best model will
 
 ### Data
 ---
+
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Images/dataset%20info.png" width="600"/>
+
+
+
 X-Ray data was obtained from multiple different sources including the [NIH's](https://nihcc.app.box.com/v/ChestXray-NIHCC) open source dataset, [JSRT](http://db.jsrt.or.jp/eng.php) lung nodule dataset, the [Guangzhou Women's and Children's hospital](https://www.qmenta.com/covid-19-kaggle-chest-x-ray-normal/) dataset, the [Covid-19 open-source dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) and the [RSNA](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) Pneumonia Detection Challenge. 
 
 Due to the imbalanced nature of the data, only the RSNA data was used to train the model. Images of other different lung anomalies were chosen from the other different datasets in order to act as a holdout set for deployment training.
