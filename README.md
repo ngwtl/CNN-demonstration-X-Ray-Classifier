@@ -4,7 +4,7 @@
 
 ### Introduction and problem statement
 ---
-Lung conditions such as pneumonia, growths and nodules that may lead to lung cancer and infiltrates in the lung are debilitating and potentially life-threatening conditions widespread in all societies. This is especially true against the backdrop of COVID-19 where [15%](https://www.webmd.com/lung/ards-acute-respiratory-distress-syndrome) of all COVID-19 patients develop severe, life-threatening pneumonia-related complications.
+Lung conditions such as pneumonia, nodules that may lead to lung cancer and infiltrates  are debilitating and potentially life-threatening conditions widespread in all societies. This is especially true against the backdrop of COVID-19 where [15%](https://www.webmd.com/lung/ards-acute-respiratory-distress-syndrome) of all COVID-19 patients develop severe, life-threatening pneumonia-related complications.
 
 In the non-COVID-19 world, pneumonia accounts for over 15% of all deaths of children under 5 years old internationally. In 2015, 920,000 children under the age of 5 died from the disease. In the United States, pneumonia accounts for over 500,000 visits to emergency departments and over 50,000 deaths in 2015 , keeping the ailment on the list of top 10 causes of death in the country.
 In Singapore, statistics are even more compelling where pneumonia accounted for [20.6](https://www.healthxchange.sg/heart-lungs/lung-conditions/pneumonia-causes-symptoms#:~:text=Pneumonia%2C%20a%20serious%20inflammatory%20condition,Ministry%20of%20Health%20(MOH).) per cent of deaths in Singapore in 2018, just behind cancer, the top killer, which caused 28.8 per cent of deaths.
