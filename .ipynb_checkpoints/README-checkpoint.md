@@ -27,6 +27,9 @@ Finally, we will train our model using GridSearch, of which, the best model will
 
 ### Modelling
 ---
+<img src="https://github.com/ngwtl/X-Ray-classifier/blob/master/Model%20results/model_performance.png" width="500"/>
+
+
 
 Transfer learning takes what a model has learned while solving one problem and applies it towards a new application. For instance, the knowledge that a neural network that has already been pre-trained to recognise objects such as cats or dogs can be used to help do a better job in reading X-ray images. 
 
